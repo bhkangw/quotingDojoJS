@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quoting Dojo</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container"><br>
+        <div class="jumbotron">
+            <h1>Welcome to Quoting Dojo</h1>
+            <form action="/quotes" method="POST">
+                <p>Your Name: <input class="form-control" type="text" name="name"></p>
+                <p>Your Quote: <textarea class="form-control" name="quote" cols="30" rows="3"></textarea></p><br>
+                <input class="btn btn-danger" type="submit" value="Submit">
+                <a href="/quotes" class="btn btn-primary">See Quotes!</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quoting Dojo</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container"><br>
+        <div class="jumbotron">
+            <h1>Here are the awesome quotes!</h1><br>
+            <% for(let quote of quotes){%>
+                <h4>"<%= quote.quote %>"</h4>
+                <p>- <%= quote.name %> at <%= quote.createdAt %></p>
+                <hr>
+            <%}%>
+        </div>
+    </div>
+</body>
+</html>
